@@ -243,6 +243,71 @@ for i in set(lst):
 
 print(repeat)
 
+#21
+import random
+
+password = ""
+
+for i in range(6):
+    password += str(random.randint(0, 9))
+
+print(password)
+
+user = input("رمز را وارد کنید: ")
+
+if user == password:
+    print("درست")
+else:
+    print("اشتباه")
+
+#22
+# names = ["علی", "رضا", "سارا"]
+grades = [18, 7, 9]
+
+for i in range(3):
+    if grades[i] < 10:
+        print(names[i])
+
+#23
+import random
+
+num = random.randint(1, 100)
+
+guess = 0
+
+while guess != num:
+    guess = int(input("حدس بزن: "))
+
+    if guess < num:
+        print("بزرگ‌تر")
+    elif guess > num:
+        print("کوچک‌تر")
+
+print("درست است")
+
+#24
+import random
+
+count = 0
+dice = 0
+
+while dice != 6:
+    dice = random.randint(1, 6)
+    count += 1
+
+print(count)
+
+
+#24
+text = input("رشته: ")
+
+done = ""
+
+for i in text:
+    if text.count(i) > 1 and i not in done:
+        print(i)
+        done += i
+
 
 
 

@@ -1,0 +1,8 @@
+.title{
+    color: purple;
+    font-size: 50;
+    font-weight: bold;
+    padding-bottom: 10px;
+    border-bottom: 3px dashed purple;
+    text-align: center;
+}

@@ -1,3 +1,4 @@
 {
-    "livePreview.defaultPreviewPath": "/index.html"
+    "livePreview.defaultPreviewPath": "/borderstyle.html",
+    "workbench.layoutControl.type": "menu"
 }
