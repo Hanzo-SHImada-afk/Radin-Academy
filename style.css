@@ -1,8 +1,27 @@
-.title{
+.title {
     color: purple;
     font-size: 50;
     font-weight: bold;
     padding-bottom: 10px;
     border-bottom: 3px dashed purple;
     text-align: center;
+}
+
+.opt {
+    width: 100%;
+    height: 35px;
+    background-color: lightgray;
+}
+
+.image {
+    margin-left: 10px;
+    width: 10;
+    height: 5px;
+    padding: 10px;
+    border: 1px solid rgb(0, 255, 0);
+}
+
+.sss {
+    width: 50px;
+    height: 25px;
 }
