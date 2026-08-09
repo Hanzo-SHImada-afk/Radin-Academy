@@ -308,7 +308,150 @@ for i in text:
         print(i)
         done += i
 
+#25
+a = float(input("عدد اول: "))
+op = input("عملگر: ")
+b = float(input("عدد دوم: "))
 
+if op == "+":
+    print(a + b)
+elif op == "-":
+    print(a - b)
+elif op == "*":
+    print(a * b)
+elif op == "/":
+    print(a / b)
+else:
+    print("عملگر نامعتبر است")
+
+
+
+#26
+n = int(input("عدد را وارد کنید: "))
+
+count = 0
+
+for i in range(2, n + 1):
+    prime = True
+
+    for j in range(2, i):
+        if i % j == 0:
+            prime = False
+            break
+
+    if prime:
+        count += 1
+
+print("تعداد اعداد اول:", count)
+
+
+
+
+#27
+text = input("رشته را وارد کنید: ")
+
+big = 0
+small = 0
+number = 0
+space = 0
+
+for i in text:
+    if i.isupper():
+        big += 1
+    elif i.islower():
+        small += 1
+    elif i.isdigit():
+        number += 1
+    elif i == " ":
+        space += 1
+
+print("حروف بزرگ:", big)
+print("حروف کوچک:", small)
+print("ارقام:", number)
+print("فاصله‌ها:", space)
+
+#28
+
+numbers = input("اعداد را با فاصله وارد کنید: ").split()
+
+new_list = []
+
+for i in numbers:
+    if i not in new_list:
+        new_list.append(i)
+
+print(new_list)
+
+#29
+grades = []
+
+for i in range(10):
+    grade = float(input("نمره را وارد کنید: "))
+    grades.append(grade)
+
+average = sum(grades) / 10
+
+count = 0
+
+for grade in grades:
+    if grade > average:
+        count += 1
+
+print("میانگین:", average)
+print("بیشترین:", max(grades))
+print("کمترین:", min(grades))
+print("تعداد بالاتر از میانگین:", count)
+
+
+
+#30
+text = input("متن را وارد کنید: ")
+
+new_text = ""
+
+for i in text:
+    if i == "Z":
+        new_text += "A"
+    elif i == "z":
+        new_text += "a"
+    elif i.isalpha():
+        new_text += chr(ord(i) + 1)
+    else:
+        new_text += i
+
+print(new_text)
+
+
+#31
+import random
+
+number = random.randint(1, 100)
+
+while True:
+    guess = int(input("حدس شما: "))
+
+    if guess == number:
+        print("درست حدس زدی!")
+        break
+    elif guess < number:
+        print("عدد بزرگ‌تر است")
+    else:
+        print("عدد کوچک‌تر است")
+
+
+#32
+
+
+import random
+
+dice = [0, 0, 0, 0, 0, 0]
+
+for i in range(1000):
+    number = random.randint(1, 6)
+    dice[number - 1] += 1
+
+for i in range(6):
+    print(i + 1, ":", dice[i])
 
 
 
