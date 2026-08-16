@@ -1,0 +1,34 @@
+
+
+body h1{
+    text-align: center;
+    color: black;
+    font-size: 50px bold;
+}
+
+body {
+    direction: rtl;
+}
+
+.container {
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+}
+
+.box {
+    width: 24.5%;
+    height: 130px;
+
+    margin-bottom: 10px;
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
